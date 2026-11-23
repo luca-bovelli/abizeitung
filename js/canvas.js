@@ -165,6 +165,14 @@
   vp.addEventListener('pointerup', endPointer);
   vp.addEventListener('pointercancel', endPointer);
 
+  // Doppelklick auf einen Rahmen zoomt auf ihn, wie in Figma
+  vp.addEventListener('dblclick', function (e) {
+    var f = e.target.closest('.frame');
+    if (!f || e.target.closest('button')) return;
+    var r = worldRect(f);
+    fitRect({ x: r.x, y: r.y - 30, w: r.w, h: r.h + 30 }, 32, true);
+  });
+
   // Tastatur, angelehnt an Figma
   window.addEventListener('keydown', function (e) {
     if (e.altKey) return;
@@ -221,7 +229,7 @@
   function start() {
     fitType();
     var id = decodeURIComponent(location.hash.slice(1));
-    go(document.getElementById(id) ? id : 'alle', false);
+    go(document.getElementById(id) ? id : 'ausgabe', false);
   }
   apply();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(start); else window.addEventListener('load', start);

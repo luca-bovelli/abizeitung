@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abizeitung 2027 Entwürfe</title>
-<meta name="description" content="Vier minimalistische, typografische Gestaltungssysteme für die Abizeitung 2027 auf einer Leinwand.">
+<meta name="description" content="Gestaltungssystem, Referenzen und Entwürfe für die Abizeitung 2027 „Abizeitbetrug“ auf einer Leinwand.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
@@ -14,16 +14,17 @@
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400,500&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sharpie@400,700&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap">
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=bonny@400,500,700&display=swap">
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap">
 <!-- Google Fonts (OFL) -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Fragment+Mono:ital@0;1&family=Courier+Prime:ital,wght@0,400;1,400&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Fragment+Mono:ital@0;1&family=Courier+Prime:ital,wght@0,400;1,400&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Jost:wght@400;500&display=swap">
 <!-- Selbst gehostet (OFL) -->
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/canvas.css">
 <link rel="stylesheet" href="css/systeme.css">
+<link rel="stylesheet" href="css/ausgabe.css">
 </head>
 <body>
 
@@ -31,6 +32,8 @@
   <div class="bar-title"><strong>Abizeitung 2027</strong><span>Gestaltungsentwürfe</span></div>
   <nav class="bar-nav" aria-label="Entwürfe">
     <button type="button" data-go="alle">Alle</button>
+    <button type="button" data-go="ausgabe" class="f-ausgabe">Ausgabe</button>
+    <button type="button" data-go="referenzen">Referenzen</button>
     <button type="button" data-go="zeugnis" class="f-zeugnis">Zeugnis</button>
     <button type="button" data-go="klausur" class="f-klausur">Klausur</button>
     <button type="button" data-go="plakat" class="f-plakat">Plakat</button>
@@ -46,6 +49,241 @@
 
 <main class="viewport" tabindex="0" aria-label="Leinwand mit allen Entwürfen. Pfeiltasten bewegen, Plus und Minus zoomen.">
 <div class="world">
+
+<!-- ======================================================= AUSGABE (Hauptrichtung) -->
+<section class="row sys-ausgabe" id="ausgabe" aria-label="Entwurf Ausgabe">
+
+  <article class="frame spec" data-label="Ausgabe / System">
+    <div class="spec-a">
+      <h2>Ausgabe</h2>
+      <p>Die Hauptrichtung, gebaut aus den Referenzen (032c, The Red Bulletin): laute Grotesk für Titel und Namen, eine Serif zum Lesen, Mono für alles Kleine, eine Signalfarbe und Fotos bis an die Kante.</p>
+      <h3>Regeln</h3>
+      <ul class="spec-rules">
+        <li>Fotos zuerst: ganzseitig oder randabfallend, nie als Kästchen im Text.</li>
+        <li>Drei Stimmen. Grotesk ist laut (Titel, Namen, Zitate), Serif erzählt (Fließtext), Mono ordnet ein (Bildunterschriften, Fakten, Autorenzeilen).</li>
+        <li>Die Signalfarbe gibt es nur als ganze Seite oder als kleine Rubrik über einer Überschrift.</li>
+        <li>Große Zahlen, Initialen und Zitate dürfen ins Foto.</li>
+        <li>Seitenzahl außen oben, Rubrik innen oben, sonst keine Kopfzeilen.</li>
+      </ul>
+    </div>
+    <div class="spec-b">
+      <h3 style="margin-top:0">Schriftsatz</h3>
+      <table class="ag-table">
+        <thead><tr><th>Rolle</th><th>Schrift</th><th>Größe</th><th>Lizenz</th></tr></thead>
+        <tbody>
+          <tr><td>Titel, Namen</td><td style="font-weight:800">Cabinet Grotesk Extrabold</td><td class="m">40–46 pt</td><td class="ok">Fontshare</td></tr>
+          <tr><td>Zitate, Vorspann</td><td style="font-weight:700">Cabinet Grotesk Bold, Medium</td><td class="m">13 pt</td><td class="ok">Fontshare</td></tr>
+          <tr><td>Zwischentitel</td><td style="font-weight:700">Cabinet Grotesk Bold</td><td class="m">10,5 pt</td><td class="ok">Fontshare</td></tr>
+          <tr><td>Fließtext</td><td style="font-family:Gambetta;font-weight:400">Gambetta Regular</td><td class="m">9/12,5 pt</td><td class="ok">Fontshare</td></tr>
+          <tr><td>Bildunterschriften, Fakten</td><td style="font-family:'JetBrains Mono';font-size:12px;font-weight:400">JetBrains Mono</td><td class="m">7/9 pt</td><td class="ok">OFL</td></tr>
+        </tbody>
+      </table>
+      <p class="m" style="margin:12px 0 0">Fontshare: kostenlos, auch kommerziell und im Druck. Die Dateien dürfen nicht weitergegeben werden, die Druckerei bekommt ein PDF mit eingebetteten Schriften. OFL: frei, auch zum Weitergeben.</p>
+      <h3>Titelschrift</h3>
+      <div class="font-pick" role="group" aria-label="Titelschrift für Ausgabe wählen">
+        <button type="button" data-set='--f-h:"Cabinet Grotesk";--w-h:800' aria-pressed="true" style="font-family:'Cabinet Grotesk';font-weight:800">Cabinet Grotesk</button>
+        <button type="button" data-set='--f-h:"Clash Display";--w-h:600' aria-pressed="false" style="font-family:'Clash Display';font-weight:600">Clash Display</button>
+        <button type="button" data-set='--f-h:"Nyght Serif";--w-h:500' aria-pressed="false" style="font-family:'Nyght Serif';font-weight:500">Nyght Serif</button>
+      </div>
+      <h3>Farben</h3>
+      <div class="font-pick" role="group" aria-label="Signalfarbe wählen">
+        <button type="button" class="swatch-btn" data-set="--signal:#FF7A21" aria-pressed="true" aria-label="Signalorange" title="Signalorange #FF7A21" style="--c:#FF7A21"></button>
+        <button type="button" class="swatch-btn" data-set="--signal:#2340D9" aria-pressed="false" aria-label="Kobaltblau" title="Kobaltblau #2340D9" style="--c:#2340D9"></button>
+        <button type="button" class="swatch-btn" data-set="--signal:#E62E2D" aria-pressed="false" aria-label="Rot" title="Rot #E62E2D" style="--c:#E62E2D"></button>
+        <button type="button" class="swatch-btn" data-set="--signal:#C6E83A" aria-pressed="false" aria-label="Neongelb" title="Neongelb #C6E83A" style="--c:#C6E83A"></button>
+      </div>
+      <p class="m" style="margin:0">Papier #FFFFFF, Schwarz #000000, dazu eine Signalfarbe. Farbe in Fotos ist frei.</p>
+      <h3>Satzspiegel</h3>
+      <p class="m" style="margin:0">A4, 12 Spalten, Abstand 4 mm. Ränder oben 14, unten 16, innen 18, außen 14 mm.</p>
+    </div>
+  </article>
+
+  <!-- Cover nach 032c -->
+  <figure class="frame" data-label="Ausgabe / Cover">
+    <div class="page recto"><div class="sheet ag-cover">
+      <div class="ag-cover-top">
+        <div class="ph night" data-ph="Detail: Schulflur nachts"></div>
+        <p class="ag-mast" data-fit><span class="l">Abizeit-</span><span class="l">betrug</span></p>
+      </div>
+      <div class="ph studio ag-cover-photo" data-ph="Porträt: lachend vor der Fotowand im Oberstufenraum"></div>
+      <div class="ag-cover-foot">
+        <div class="ag-stripes" aria-hidden="true"></div>
+        <div>
+          <p class="ag-cover-head">Dreizehn Jahre Schule: der größte Betrug seit Erfindung der Hausaufgabe</p>
+          <p class="ag-mono">Abiturjahrgang 2027, Gymnasium am Stadtpark, Sommer 2027</p>
+        </div>
+      </div>
+    </div></div>
+  </figure>
+
+  <!-- Steckbriefe -->
+  <figure class="frame spread" data-label="Ausgabe / Steckbriefe, Seiten 18–19">
+    <div class="page verso"><div class="sheet ag-sb">
+      <div class="ph studio ag-bleed top-label right-label" style="top:0;left:0;right:0;height:57%" data-ph="Porträt Lena, Studio, hellgrauer Hintergrund"></div>
+      <p class="ag-folio ag-run">18</p>
+      <p class="ag-label ag-run">Steckbriefe</p>
+      <div class="ag-grid ag-sb-body">
+        <h4 class="ag-h ag-name" style="grid-column:1 / 13">Lena<br>Hoffmann</h4>
+        <p class="ag-lead" style="grid-column:1 / 7">Kam in Klasse 5 mit einem Tamagotchi und geht mit einer Eins in Mathe.</p>
+        <div class="ag-mono ag-facts" style="grid-column:7 / 13">
+          <p><b>Leistungskurse</b> Mathematik, Biologie</p>
+          <p><b>Spitzname</b> Leni</p>
+          <p><b>Dabei seit</b> Klasse 5</p>
+          <p><b>Nach dem Abi</b> Work and Travel in Neuseeland, dann Medizin</p>
+        </div>
+        <blockquote class="ag-quote" style="grid-column:1 / 10">„Hat drei Jahre lang keinen eigenen Stift besessen und trotzdem die besten Mitschriften geschrieben.“<footer class="ag-mono">Freunde über Lena</footer></blockquote>
+      </div>
+      <p class="ag-foot">Abizeitbetrug</p>
+    </div></div>
+    <div class="page recto"><div class="sheet">
+      <div class="ph bw ag-bleed" style="top:0;bottom:0;right:0;width:50%" data-ph="Porträt Jonas, Schwarzweiß, auf der Bühne der Aula"></div>
+      <p class="ag-label ag-run">Steckbriefe</p>
+      <p class="ag-folio ag-run ag-white">19</p>
+      <div class="ag-half">
+        <h4 class="ag-h ag-name" style="margin-top:calc(8 * var(--mm))">Jonas<br>Okafor</h4>
+        <p class="ag-lead" style="margin-top:calc(5 * var(--mm))">Theater-AG seit der Siebten, Hauptrolle seit der Neunten, pünktlich seit nie.</p>
+        <div class="ag-mono ag-facts" style="margin-top:calc(6 * var(--mm))">
+          <p><b>Leistungskurse</b> Deutsch, Geschichte</p>
+          <p><b>Spitzname</b> Jo</p>
+          <p><b>Dabei seit</b> Klasse 7</p>
+          <p><b>Nach dem Abi</b> FSJ am Stadttheater</p>
+        </div>
+        <blockquote class="ag-quote" style="margin-top:auto">„Kam zu jeder Probe zu spät und konnte trotzdem als Einziger immer seinen Text.“<footer class="ag-mono">Freunde über Jonas</footer></blockquote>
+      </div>
+      <p class="ag-foot ag-white">Abizeitbetrug</p>
+    </div></div>
+  </figure>
+
+  <!-- LK-Artikel -->
+  <figure class="frame spread" data-label="Ausgabe / LK-Artikel, Seiten 60–61">
+    <div class="page verso"><div class="sheet ag-art">
+      <p class="ag-folio ag-run">60</p>
+      <p class="ag-label ag-run">Leistungskurse</p>
+      <p class="ag-label ag-signal-text" style="margin-top:calc(6 * var(--mm))">LK/</p>
+      <h4 class="ag-h ag-h1" style="margin-top:calc(2 * var(--mm))">Geschichte</h4>
+      <div class="ag-grid" style="margin-top:calc(5 * var(--mm));align-items:end">
+        <p class="ag-lead" style="grid-column:1 / 9">Drei Jahre, eine Exkursion, ein Lehrer, der jedes Datum auswendig kennt. Was 17 Leute aus dem Geschichts-LK mitnehmen.</p>
+        <div class="ag-mono" style="grid-column:9 / 13;text-align:right">
+          <p><b>Lehrkraft</b> Herr Demir</p>
+          <p><b>Kursgröße</b> 17</p>
+          <p><b>Karteikarten</b> 412 pro Klausur</p>
+        </div>
+      </div>
+      <p class="ag-mono" style="margin-top:calc(4 * var(--mm))">Text <b>Jonas Okafor</b>, Fotos <b>Mira Yılmaz</b></p>
+      <div class="ag-body">
+        <p class="ag-text ag-drop">Montag, erste Stunde, Raum 214. Herr Demir steht schon an der Tafel, als die Ersten von uns hereinkommen, und schreibt eine Jahreszahl an. Keine Begrüßung, kein Lehrplan, nur 1923. Wer bis zum Klingeln nicht sagen kann, was in diesem Jahr passiert ist, liest bis Donnerstag ein Kapitel mehr. So fing es an, und so ging es drei Jahre lang weiter.</p>
+        <p class="ag-text">Siebzehn Leute haben sich in der E-Phase für Geschichte als Leistungskurs entschieden. Die meisten, weil sie gern lesen, ein paar, weil die Alternative Physik gewesen wäre, und einer, weil er dachte, man schaue hauptsächlich Dokumentationen. Er hat inzwischen eine Facharbeit über die Hyperinflation geschrieben und eine Eins bekommen.</p>
+        <h5 class="ag-sub">Krakau, Oktober 2026</h5>
+        <p class="ag-text">Der Höhepunkt war die Exkursion nach Krakau. Fünf Tage, ein Hostel in Kazimierz und ein Programm, das um acht Uhr morgens begann und selten vor zehn Uhr abends endete. Wir waren im Stadtarchiv, in der Fabrik von Oskar Schindler und an einem Vormittag in Auschwitz. Über diesen Tag haben wir auf der Rückfahrt lange nicht gesprochen und danach umso mehr.</p>
+        <h5 class="ag-sub">Was bleibt</h5>
+        <p class="ag-text">Geschichte im LK heißt vor allem: Quellen lesen. Briefe, Flugblätter, Reichstagsprotokolle, Zeitungsartikel, deren Schrift man erst entziffern muss. Herr Demir hat uns beigebracht, bei jedem Text zuerst zu fragen, wer ihn geschrieben hat, für wen und warum. Das klingt einfach. Es verändert aber, wie man Nachrichten liest, Wahlplakate anschaut und Familienfeiern übersteht.</p>
+        <p class="ag-text">In der Q2 kam die Klausurenphase und mit ihr die Karteikarten. Unser Rekord liegt bei 412 Karten für eine einzige Klausur über den Kalten Krieg. Sie liegen bis heute in einem Schuhkarton im Kursraum, falls der nächste Jahrgang sie braucht.</p>
+        <p class="ag-text">Am letzten Kurstag hat Herr Demir keine Jahreszahl an die Tafel geschrieben, sondern unsere Namen. Darunter stand: Ihr seid jetzt selbst Geschichte. Wir fanden das kitschig. Fotografiert haben es trotzdem alle.</p>
+      </div>
+      <p class="ag-foot">Abizeitbetrug</p>
+    </div></div>
+    <div class="page recto"><div class="sheet" style="display:flex;flex-direction:column;justify-content:flex-end">
+      <div class="ph room ag-bleed top-label right-label" style="inset:0" data-ph="Kursfoto: der Geschichts-LK im Stadtarchiv Krakau"></div>
+      <p class="ag-label ag-run ag-white">Leistungskurse</p>
+      <p class="ag-folio ag-run ag-white">61</p>
+      <div class="ag-grid">
+        <blockquote class="ag-h ag-xl ag-white" style="grid-column:1 / 10">„Ich warte. Ich habe Zeit. Ihr habt Abitur.“</blockquote>
+        <p class="ag-mono ag-white" style="grid-column:1 / 6;margin-top:calc(4 * var(--mm))">Herr Demir, Kursleiter seit 2019, an einem Montag in der ersten Stunde</p>
+      </div>
+      <p class="ag-foot ag-white">Abizeitbetrug</p>
+    </div></div>
+  </figure>
+
+  <!-- Zitateseite -->
+  <figure class="frame spread" data-label="Ausgabe / Zitateseite, Seiten 12–13">
+    <div class="page verso signal"><div class="sheet" style="display:flex;flex-direction:column">
+      <p class="ag-folio ag-run">12</p>
+      <p class="ag-label ag-run">Lehrerzitate</p>
+      <blockquote class="ag-h ag-xl" style="font-size:calc(34 * var(--pt));margin-top:calc(14 * var(--mm))">„Das ist keine Meinung, das ist ein Rechenfehler.“</blockquote>
+      <p class="ag-small" style="margin-top:auto;margin-left:auto;width:calc(52 * var(--mm));text-align:right"><b>Herr Brandt</b>Mathematik, Q2. Auf die Frage, ob man das Ergebnis nicht auch anders sehen könne.</p>
+      <p class="ag-foot">Abizeitbetrug</p>
+    </div></div>
+    <div class="page recto"><div class="sheet">
+      <p class="ag-label ag-run">Lehrerzitate</p>
+      <p class="ag-folio ag-run">13</p>
+      <p class="ag-mono" style="margin-top:calc(6 * var(--mm))">Gesammelt in drei Jahren Oberstufe. Wortlaut ohne Gewähr.</p>
+      <div class="ag-grid ag-quotes" style="margin-top:calc(10 * var(--mm))">
+        <blockquote class="ag-quote">„Wir machen jetzt fünf Minuten Pause. Also zwei.“<footer class="ag-mono">Frau Lindqvist, Englisch</footer></blockquote>
+        <blockquote class="ag-quote">„Ich warte. Ich habe Zeit. Ihr habt Abitur.“<footer class="ag-mono">Herr Demir, Geschichte</footer></blockquote>
+        <blockquote class="ag-quote">„Physik ist wie Kochen, nur dass hinterher keiner etwas essen will.“<footer class="ag-mono">Frau Wagner, Physik</footer></blockquote>
+        <blockquote class="ag-quote">„Wer jetzt noch fragt, wann die Klausur ist, schreibt sie morgen.“<footer class="ag-mono">Herr Albers, Biologie</footer></blockquote>
+        <blockquote class="ag-quote">„Handys weg. Ja, auch die Smartwatch. Ja, auch die zweite.“<footer class="ag-mono">Frau Lindqvist, Englisch</footer></blockquote>
+        <blockquote class="ag-quote">„Das steht so nicht im Lehrplan, aber im Leben.“<footer class="ag-mono">Herr Brandt, Mathematik</footer></blockquote>
+      </div>
+      <p class="ag-foot">Abizeitbetrug</p>
+    </div></div>
+  </figure>
+
+  <!-- Fotoseite: Galerie über den Bund -->
+  <figure class="frame spread" data-label="Ausgabe / Fotoseite Galerie, Seiten 98–99">
+    <div class="page verso"><div class="sheet">
+      <div class="ph sky ag-bleed" style="top:0;bottom:0;left:0;width:200%" data-ph="Querformat über beide Seiten: Kursfahrt, Gruppe auf dem Wawel-Hügel, Himmel oben"></div>
+      <p class="ag-folio ag-run ag-white">98</p>
+      <p class="ag-foot ag-white">Abizeitbetrug</p>
+    </div></div>
+    <div class="page recto"><div class="sheet" style="display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end;text-align:right">
+      <div class="ph sky ag-bleed" style="top:0;bottom:0;left:-100%;width:200%"></div>
+      <p class="ag-label ag-run ag-white">Kursfahrten</p>
+      <p class="ag-folio ag-run ag-white">99</p>
+      <p class="ag-sub ag-white">Krakau, Polen</p>
+      <h4 class="ag-h ag-white" style="font-size:calc(30 * var(--pt))">Zwölf Stunden Bus</h4>
+      <p class="ag-small ag-white" style="width:calc(66 * var(--mm));margin-top:calc(3 * var(--mm))">Abfahrt 4:30 Uhr vor der Turnhalle, mit 84 Leuten, drei Lehrkräften und einem Busfahrer, der nach Kilometer 600 aufgehört hat zu lächeln. Das Foto entstand am zweiten Tag auf dem Wawel-Hügel.</p>
+      <p class="ag-mono ag-white" style="margin-top:calc(2 * var(--mm))">Foto: Mira Yılmaz</p>
+      <p class="ag-foot ag-white">Abizeitbetrug</p>
+    </div></div>
+  </figure>
+
+  <!-- Fotoseite: Kontaktbogen -->
+  <figure class="frame spread" data-label="Ausgabe / Fotoseite Kontaktbogen, Seiten 104–105">
+    <div class="page verso inverse"><div class="sheet">
+      <p class="ag-folio ag-run ag-white">104</p>
+      <div class="ag-contact">
+        <figure><figcaption class="ag-mono">01A</figcaption><div class="ph bw-light" data-ph="Einwegkamera"></div></figure>
+        <figure><figcaption class="ag-mono">02A</figcaption><div class="ph bw"></div></figure>
+        <figure><figcaption class="ag-mono">03A</figcaption><div class="ph bw-light"></div></figure>
+        <figure><figcaption class="ag-mono">04A</figcaption><div class="ph bw"></div></figure>
+        <figure><figcaption class="ag-mono">05A</figcaption><div class="ph bw-light"></div></figure>
+        <figure><figcaption class="ag-mono">06A</figcaption><div class="ph bw"></div></figure>
+        <figure><figcaption class="ag-mono">07A</figcaption><div class="ph bw-light"></div></figure>
+        <figure><figcaption class="ag-mono">08A</figcaption><div class="ph bw"></div></figure>
+        <figure><figcaption class="ag-mono">09A</figcaption><div class="ph bw-light"></div></figure>
+      </div>
+      <p class="ag-foot ag-white">Abizeitbetrug</p>
+    </div></div>
+    <div class="page recto signal"><div class="sheet" style="display:flex;flex-direction:column">
+      <p class="ag-label ag-run">Kursfahrten</p>
+      <p class="ag-folio ag-run">105</p>
+      <div class="ag-grid" style="flex:1 1 0;min-height:0;margin-top:calc(6 * var(--mm))">
+        <div class="ph bw" style="grid-column:4 / 13;height:78%" data-ph="Schwarzweiß, Bewegungsunschärfe: Rennen zum Bus"></div>
+      </div>
+      <p class="ag-small" style="width:calc(62 * var(--mm))"><b>Einwegkamera</b>36 Bilder, 84 Leute, eine Kamera, die durch den ganzen Bus gewandert ist. Entwickelt hat sie Frau Wagner im Fotolabor. Zwölf Bilder sind schwarz, auf dreien ist ein Daumen.</p>
+      <p class="ag-foot">Abizeitbetrug</p>
+    </div></div>
+  </figure>
+</section>
+
+<!-- ======================================================= REFERENZEN -->
+<section class="row" id="referenzen" aria-label="Referenzen">
+  <figure class="frame ref" data-label="Referenz / 032c, Cover"><img src="referenzen/web/032c-cover.jpg" alt="032c Cover: großer Schriftzug, kleines Bild links daneben, großes Porträt, unten Farbstreifen und fette Titelzeile" draggable="false"><figcaption><b>Vorlage für unser Cover</b>Schriftzug riesig, ein kleines Bild daneben, ein großes Porträt mit weißem Rand, unten Farbstreifen und eine fette Zeile in Versalien.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Editorial"><img src="referenzen/web/redbulletin-03-editorial.jpg" alt="Editorial mit riesiger Initiale A und Kurzporträts" draggable="false"><figcaption><b>Initiale und Kurzporträts</b>Eine Initiale über sechs Zeilen. Kleine Porträts mit Text in Mono, Namen in Schmuckfarbe.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Inhalt"><img src="referenzen/web/redbulletin-06-inhalt.jpg" alt="Inhaltsverzeichnis mit großen Seitenzahlen im Foto" draggable="false"><figcaption><b>Zahlen im Foto</b>Große Seitenzahlen direkt im Bild. Rubrik klein über dem Titel, Titel fett, Anreißer normal. Kleinkram als Mono-Liste.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Galerie"><img src="referenzen/web/redbulletin-08-galerie.jpg" alt="Ein Foto über die ganze Doppelseite" draggable="false"><figcaption><b>Ein Foto, zwei Seiten</b>Das Bild läuft über den Bund. Text nur unten rechts, weiß, rechtsbündig.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Heroes"><img src="referenzen/web/redbulletin-20-heroes.jpg" alt="Porträt-Artikel: Name groß, Fakten in Mono, ganzseitiges Foto mit Zitat" draggable="false"><figcaption><b>Modell für Steckbriefe</b>Name fett, Vorspann in Grotesk, Fließtext Serif, Fakten in Mono mit fetten Stichworten. Rechts ein ganzseitiges Foto mit Zitat.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Portfolio"><img src="referenzen/web/redbulletin-28-portfolio-zitat.jpg" alt="Orange Seite mit großem Textblock neben Schwarzweißfoto" draggable="false"><figcaption><b>Farbe als ganze Seite</b>Eine Seite komplett in Signalfarbe, nur ein großer Textblock. Daneben Schwarzweiß. Modell für Zitatseiten.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Portfolio"><img src="referenzen/web/redbulletin-32-portfolio-text.jpg" alt="Schwarzweißfoto neben orangefarbener Textseite" draggable="false"><figcaption><b>Schwarzweiß und Orange</b>Fotos ohne Farbe, Farbe nur in der Fläche. Bildunterschrift fett, kurz, rechtsbündig.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Kontaktbogen"><img src="referenzen/web/redbulletin-36-kontaktbogen.jpg" alt="Kontaktbogen mit Filmstreifen" draggable="false"><figcaption><b>Kontaktbogen</b>Filmstreifen als Layout. Perfekt für Einwegkamera-Fotos von der Kursfahrt.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Rap"><img src="referenzen/web/redbulletin-44-rap.jpg" alt="Konzertfoto und nummerierte Abschnitte" draggable="false"><figcaption><b>Nummern, die tragen</b>Riesige Ziffern für nummerierte Abschnitte. Zwei Textschriften mit Absicht nebeneinander.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Mode"><img src="referenzen/web/redbulletin-52-mode-opener.jpg" alt="Zwei Porträts, Titel in fetten Versalien" draggable="false"><figcaption><b>Opener</b>Zwei Fotos derselben Person, Titel in fetten Versalien unten links im Bild.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Mode"><img src="referenzen/web/redbulletin-56-mode-raster.jpg" alt="Großes Porträt und Raster aus sechs Fotos" draggable="false"><figcaption><b>Fotoraster</b>Gleich große Fotos, Mono-Bildunterschriften in den Ecken. Gut für Kurs- oder Tutorfotos.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, MotoGP"><img src="referenzen/web/redbulletin-64-motogp.jpg" alt="Zitat im Foto, Initiale M" draggable="false"><figcaption><b>Zitat im Bild</b>Zitat weiß direkt ins Foto gesetzt. Initiale neben einem quadratischen Foto.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Bergsteigen"><img src="referenzen/web/redbulletin-70-bergsteigen.jpg" alt="Titel geht in den Text über, Foto über den Bund" draggable="false"><figcaption><b>Titel als Satzanfang</b>Die Überschrift endet mit Komma und geht direkt in den Text über.</figcaption></figure>
+  <figure class="frame ref" data-label="Referenz / The Red Bulletin, Reise"><img src="referenzen/web/redbulletin-80-reise.jpg" alt="Reisereportage mit roter Rubrik und Mono-Bildunterschriften" draggable="false"><figcaption><b>Rubrik mit Schrägstrich</b>„Reise/“ in Rot über dem Titel. Mono-Bildunterschriften mit farbiger Einleitung.</figcaption></figure>
+</section>
 
 <!-- ======================================================= 1 ZEUGNIS -->
 <section class="row sys-zeugnis" id="zeugnis" aria-label="Entwurf Zeugnis">

@@ -35,6 +35,7 @@ button { font: inherit; color: inherit; }
 .bar button:hover { background: #F0F0EE; }
 .bar button[aria-current="true"], .bar button[aria-pressed="true"] { background: #000; color: #fff; }
 .bar .zoom-level { min-width: 56px; font-variant-numeric: tabular-nums; }
+.bar .f-ausgabe { font-family: "Cabinet Grotesk", sans-serif; font-weight: 800; font-size: 14px; }
 .bar .f-zeugnis { font-family: "Nyght Serif", Georgia, serif; font-size: 15px; }
 .bar .f-klausur { font-family: "JetBrains Mono", monospace; }
 .bar .f-plakat { font-family: "Clash Display", sans-serif; font-weight: 600; font-size: 14px; }
