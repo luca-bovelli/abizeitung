@@ -2,10 +2,10 @@
 
 Vier Entwürfe für ein minimalistisches, typografisches Gestaltungssystem, alle auf einer Leinwand:
 
-- **Zeugnis**: Newsreader, Mittelachse, Stempelblau für Stimmen von Menschen
-- **Klausur**: IBM Plex Mono auf 5-mm-Karo, Rotstift nur für Lehrkräfte
-- **Plakat**: Archivo, nur zwei Größen (9 pt und „füllt die Breite“), schwarz-weiß
-- **Weißraum**: Instrument Sans, eine einzige Größe, Fotos tragen die Seite
+- **Zeugnis**: Nyght Serif (Display) + Gambetta, Mittelachse, Stempelblau für Stimmen von Menschen
+- **Klausur**: JetBrains Mono auf 5-mm-Karo, Lehrkräfte schreiben rot von Hand (Sharpie)
+- **Plakat**: Clash Display + Cabinet Grotesk, nur zwei Größen (9 pt und „füllt die Breite“), schwarz-weiß
+- **Weißraum**: Switzer, eine einzige Größe, Fotos tragen die Seite
 
 Jede Zeile zeigt Regeln, Schrift, Farben, Satzspiegel, Titel, Inhalt, Lehrerzitate und Steckbriefe. Namen, Zitate und Schule sind Platzhalter.
 
@@ -21,4 +21,6 @@ Direkt zu einem Entwurf: `#zeugnis`, `#klausur`, `#plakat`, `#weissraum`.
 - `css/systeme.css`: die vier Systeme
 - `js/canvas.js`: Bewegen, Zoomen, Raster, Breitenanpassung für Plakat
 
-Lokal ansehen: `index.html` im Browser öffnen. Veröffentlicht über GitHub Pages (Branch `main`, Ordner `/`).
+Jedes Systemblatt hat eine Schriftwahl zum Vergleichen. Schriften: Fontshare (ITF Free Font License), Google Fonts und Nyght Serif (OFL, selbst gehostet in `fonts/`).
+
+Lokal ansehen: `index.html` im Browser öffnen. Veröffentlicht über GitHub Pages per GitHub Actions (`.github/workflows/pages.yml`), bei jedem Push auf `main`.

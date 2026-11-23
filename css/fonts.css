@@ -1,0 +1,11 @@
+/* Nyght Serif, Maksym Kobuzan, SIL Open Font License 1.1 (fonts/nyght-serif/LICENSE.txt) */
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-Light.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-LightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-RegularItalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-MediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-Dark.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nyght Serif"; src: url("../fonts/nyght-serif/NyghtSerif-DarkItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-display: swap; }

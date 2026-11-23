@@ -4,9 +4,10 @@
 .sys-zeugnis {
   --m-top: 28; --m-bot: 30; --m-in: 24; --m-out: 24; --cols: 1; --gutter: 0;
   --grau: #6F6F6F; --blau: #28308C;
-  font-family: "Newsreader", Georgia, serif;
-  font-optical-sizing: auto;
+  --f: "Gambetta"; --f-d: "Nyght Serif";
+  font-family: var(--f), Georgia, serif;
 }
+.sys-zeugnis .spec h2, .zg-d, .zg-jahr, .zg-title, .zg-name, .zg-motto { font-family: var(--f-d), Georgia, serif; }
 .sys-zeugnis .spec { font-size: 17px; line-height: 1.5; }
 .sys-zeugnis .spec h2 { font-size: 96px; font-weight: 300; line-height: 1; margin: 0 0 24px; letter-spacing: -.01em; }
 .sys-zeugnis .spec h3 { font-size: 17px; font-weight: 400; font-style: italic; color: var(--grau); }
@@ -23,6 +24,7 @@
 .zg-13 { font-size: calc(13 * var(--pt)); line-height: 1.35; }
 .zg-kicker { font-style: italic; margin: 0; }
 .zg-jahr { font-size: calc(144 * var(--pt)); font-weight: 300; line-height: 1; letter-spacing: -.015em; margin: calc(3 * var(--mm)) 0 calc(5 * var(--mm)); }
+.zg-motto { font-size: calc(21 * var(--pt)); font-style: italic; line-height: 1.2; color: var(--blau); margin: 0 0 calc(10 * var(--mm)); }
 .zg-title { font-size: calc(21 * var(--pt)); font-weight: 400; line-height: 1.2; margin: 0 0 calc(14 * var(--mm)); }
 .zg-name { font-size: calc(34 * var(--pt)); font-weight: 400; line-height: 1.1; margin: calc(9 * var(--mm)) 0 calc(6 * var(--mm)); }
 .zg-photo { width: calc(70 * var(--mm)); aspect-ratio: 4 / 5; flex: none; }
@@ -51,8 +53,12 @@
 .sys-klausur {
   --m-top: 20; --m-bot: 17; --m-in: 20; --m-out: 15;
   --grau: #767676; --rot: #E1251B;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  --f: "JetBrains Mono"; --f-hand: "Sharpie";
+  font-family: var(--f), ui-monospace, monospace;
 }
+/* Lehrkräfte schreiben von Hand */
+.kl-r, .kl-rand, .kl-hand { font-family: var(--f-hand), cursive; letter-spacing: 0; }
+.kl-rand { font-size: calc(13 * var(--pt)); }
 .sys-klausur .spec { font-size: 14px; line-height: 22px; }
 .sys-klausur .spec h2 { font-size: 64px; font-weight: 400; line-height: 66px; margin: 0 0 22px; letter-spacing: -.02em; }
 .sys-klausur .spec h3 { font-size: 14px; font-weight: 400; color: var(--grau); margin-top: 44px; }
@@ -103,21 +109,27 @@
    ============================================================ */
 .sys-plakat {
   --m-top: 10; --m-bot: 10; --m-in: 12; --m-out: 10; --cols: 6; --gutter: 4;
-  font-family: "Archivo", "Arial Narrow", sans-serif;
+  --f: "Cabinet Grotesk"; --f-big: "Clash Display"; --w-big: 600; --s-big: 100%;
+  font-family: var(--f), sans-serif;
+}
+.sys-plakat .spec h2, .pk-big, .pk-big-sample {
+  font-family: var(--f-big), sans-serif; font-weight: var(--w-big); font-stretch: var(--s-big);
+  font-synthesis: none;
 }
 .sys-plakat .spec { font-size: 15px; line-height: 1.4; font-weight: 500; }
-.sys-plakat .spec h2 { font-size: 168px; font-weight: 800; font-stretch: 62%; line-height: .82; margin: 0 0 28px; letter-spacing: -.01em; }
+.sys-plakat .spec h2 { font-size: 104px; line-height: .9; margin: 0 0 28px; letter-spacing: -.01em; }
+.pk-big-sample { font-size: 84px; line-height: .95 !important; }
 .sys-plakat .spec h3 { font-size: 15px; font-weight: 700; margin-top: 36px; }
 
 .sys-plakat .sheet {
   display: flex; flex-direction: column;
-  font-size: calc(9 * var(--pt)); line-height: 1.3; font-weight: 500; font-stretch: 100%;
+  font-size: calc(9 * var(--pt)); line-height: 1.3; font-weight: 500;
 }
 .sys-plakat .sheet p { margin: 0; }
 .pk-end { justify-content: flex-end; }
 .pk-big {
-  margin: 0; font-weight: 800; font-stretch: 62%;
-  line-height: .86; letter-spacing: -.005em;
+  margin: 0;
+  line-height: .88; letter-spacing: -.005em;
   font-size: calc(40 * var(--mm));
 }
 .pk-big .l { display: block; width: max-content; }
@@ -142,7 +154,8 @@
 .sys-weissraum {
   --m-top: 14; --m-bot: 14; --m-in: 18; --m-out: 14; --cols: 8; --gutter: 4;
   --grau: #7A7A7A;
-  font-family: "Instrument Sans", sans-serif;
+  --f: "Switzer";
+  font-family: var(--f), sans-serif;
 }
 .sys-weissraum .spec { font-size: 15px; line-height: 21px; grid-template-columns: 300px minmax(0, 1fr); }
 .sys-weissraum .spec h2, .sys-weissraum .spec h3 { font-size: 15px; font-weight: 400; margin: 0; }

@@ -130,6 +130,7 @@
   var pts = new Map(), pinch = null;
   vp.addEventListener('pointerdown', function (e) {
     if (e.pointerType === 'mouse' && e.button !== 0 && e.button !== 1) return;
+    if (e.target.closest('button, a, input, select')) return; // Bedienelemente auf der Leinwand klickbar lassen
     stopAnim();
     vp.setPointerCapture(e.pointerId);
     pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -193,6 +194,24 @@
       if (max) el.style.fontSize = (100 * el.clientWidth / max) + 'px';
     });
   }
+
+  // Schriftwahl: setzt CSS-Variablen auf der Zeile des Entwurfs, z. B. data-set='--f-big:"Tanker";--w-big:400'
+  document.querySelectorAll('.font-pick').forEach(function (group) {
+    var row = group.closest('.row');
+    group.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-set]');
+      if (!b) return;
+      b.dataset.set.split(';').forEach(function (pair) {
+        var i = pair.indexOf(':');
+        if (i > 0) row.style.setProperty(pair.slice(0, i).trim(), pair.slice(i + 1).trim());
+      });
+      group.querySelectorAll('button').forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+      // Breitenanpassung neu rechnen, sobald die Schrift geladen ist
+      // (fitType erzwingt das Layout und stößt damit das Laden an; fonts.ready wartet darauf)
+      fitType();
+      if (document.fonts) document.fonts.ready.then(fitType);
+    });
+  });
 
   // Hinweis an Eingabeart anpassen
   if (window.matchMedia('(pointer: coarse)').matches) {
